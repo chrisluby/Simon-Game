@@ -1,0 +1,63 @@
+body {
+  padding:0px;
+  margin:0;
+  background: #272727;
+  -webkit-font-smoothing: antialiased;
+}
+
+.levelnum {
+    display: flex;
+    justify-content: center;
+    margin: 3.5%;
+    color: whitesmoke;
+}
+
+.container {
+    color:red;
+    background-color: aquamarine;
+    border: 1px solid black;
+    margin-top: 3.5%;
+    max-width: 700px;
+    margin-bottom: 0px;
+    
+}
+
+.col {
+    border: .5px solid black;
+    height: 300px;
+  
+}
+
+
+/* flashes when block is used */
+ .greenFlash{
+  -webkit-box-shadow: -20px -20px 55px -23px rgba(3,245,39,0.71);
+  -moz-box-shadow: -20px -20px 55px -23px rgba(3,245,39,0.71);
+  box-shadow: -20px -20px 55px -23px rgba(3,245,39,0.71);
+} 
+
+.yellowFlash{
+  -webkit-box-shadow: -20px 20px 55px -23px rgba(245,213,8,1);
+  -moz-box-shadow: -20px 20px 55px -23px rgba(245,213,8,1);
+  box-shadow: -20px 20px 55px -23px rgba(245,213,8,1);
+}
+
+.redFlash {
+  -webkit-box-shadow: 20px -20px 55px -23px rgba(245,10,10,1);
+  -moz-box-shadow: 20px -20px 55px -23px rgba(245,10,10,1);
+  box-shadow: 20px -20px 55px -23px rgba(245,10,10,1);
+}
+
+.blueFlash {
+  -webkit-box-shadow: 20px 40px 55px -23px rgba(12,12,245,1);
+  -moz-box-shadow: 20px 40px 55px -23px rgba(12,12,245,1);
+  box-shadow: 20px 40px 55px -23px rgba(12,12,245,1);
+
+} 
+
+
+
+
+
+
+
