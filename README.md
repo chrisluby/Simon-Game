@@ -9,7 +9,7 @@ Repeat back the randomly generated colors in order.
 ## Authors
 
 * **Christopher Luby** - *Initial work*
-[contributors](https://github.com/your/project/contributors).
+
 
 ## License
 
