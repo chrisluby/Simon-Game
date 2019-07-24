@@ -4,23 +4,24 @@ let red = document.getElementById('red')
 let yellow = document.getElementById('yellow')
 let blue = document.getElementById('blue')
 //------------------------
-
+let userAnswer = [];
 
 function randomColor() {
     var min = 1; 
     var max = 100
     var number = Math.floor(Math.random() * (+max - +min)) + +min;
-    if (number > 0 && number < 25) {
+    if (number > 0 && number <= 25) {
         let number = "green"
         return number
-    } else if (number > 25 && number < 50) {
+    } else if (number >= 25 && number <= 50) {
         let number = "red"
         return number
-    } else if (number > 50 && number < 75) {
+    } else if (number >= 50 && number <= 75) {
         let number = "yellow"
         return number
     } else {
-        return "blue"
+        let number = "blue"
+        return number
     }
     
 }
@@ -31,4 +32,4 @@ for (i=0; i < 100; i++) {
     colors.push(randomColor())
 }
 
-console.log(colors)
+//game ready-------------------------------------------------------------------------------
