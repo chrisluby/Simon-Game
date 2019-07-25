@@ -5,6 +5,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+div {}
 .levelnum {
     display: flex;
     justify-content: center;
@@ -14,7 +15,7 @@ body {
 
 .container {
     color:red;
-    background-color: aquamarine;
+    background-color: black;
     border: 1px solid black;
     margin-top: 3.5%;
     max-width: 700px;
@@ -28,9 +29,20 @@ body {
   
 }
 
-
+.red {
+  background-color: red;
+}
+.green{
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+.yellow {
+  background-color: yellow;
+}
 /* flashes when block is used */
- .greenFlash{
+ /* .greenFlash{
   -webkit-box-shadow: -20px -20px 55px -23px rgba(3,245,39,0.71);
   -moz-box-shadow: -20px -20px 55px -23px rgba(3,245,39,0.71);
   box-shadow: -20px -20px 55px -23px rgba(3,245,39,0.71);
@@ -53,7 +65,7 @@ body {
   -moz-box-shadow: 20px 40px 55px -23px rgba(12,12,245,1);
   box-shadow: 20px 40px 55px -23px rgba(12,12,245,1);
 
-} 
+}  */
 
 
 
