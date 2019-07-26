@@ -8,15 +8,15 @@ let userAnswer = [];
 
 function randomColor() {
     var min = 1; 
-    var max = 100
+    var max = 1000;
     var number = Math.floor(Math.random() * (+max - +min)) + +min;
-    if (number > 0 && number <= 25) {
+    if (number > 0 && number <= 250) {
         let number = "green"
         return number
-    } else if (number >= 25 && number <= 50) {
+    } else if (number >= 250 && number <= 500) {
         let number = "red"
         return number
-    } else if (number >= 50 && number <= 75) {
+    } else if (number >= 500 && number <= 750) {
         let number = "yellow"
         return number
     } else {
@@ -25,11 +25,19 @@ function randomColor() {
     }  
 }
 
-//generate array of 100 random colors
+//generate array of 40 random colors
 let colors = [];
-for (i=0; i < 100; i++) {
+for (i=0; i < 40; i++) {
     colors.push(randomColor())
 }
+
+
+colors.forEach(function(color) {
+    colorPressed()
+  });
+
+
+
 
 //TODO: refactor
 //shows userclick and pushes the color to userAnswer array
@@ -74,7 +82,6 @@ blue.addEventListener("mousedown", function() {
 });
 
 console.log(colors)
-//* game state
 
 
 
@@ -83,3 +90,57 @@ console.log(colors)
 
 
 
+//show the buttons being pressed
+function greenPressed(){
+    setTimeout(function(){ 
+        green.style.backgroundColor = "green"}, 600);
+    
+        green.style.backgroundColor = "#00800085"; //flash color  //todo: adjust colors
+        userAnswer.push("green"); 
+        console.log(userAnswer)
+}
+
+function redPressed(){
+    setTimeout(function(){ 
+        red.style.backgroundColor = "red"}, 600);
+    
+        red.style.backgroundColor = "#920000"; //flash color
+        userAnswer.push("red"); 
+        console.log(userAnswer)
+}
+
+function yellowPressed(){
+    setTimeout(function(){ 
+        yellow.style.backgroundColor = "yellow"}, 600);
+    
+        yellow.style.backgroundColor = "#7f8000"; //flash color  //todo: adjust colors
+        userAnswer.push("yellow"); 
+        console.log(userAnswer)
+}
+
+function bluePressed(){
+    setTimeout(function(){ 
+        blue.style.backgroundColor = "blue"}, 600);
+    
+        blue.style.backgroundColor = "#000079"; //flash color  //todo: adjust colors
+        userAnswer.push("blue"); 
+        console.log(userAnswer)
+}
+
+bluePressed()
+
+
+
+
+
+// function showMoves() {
+//     var i = 0;
+//     var moves = setInterval(function(){
+//       playGame(colors[i]);
+
+
+//       i++;
+//       if (i >= game.currentGame.length) {
+//         clearInterval(moves);
+//       }
+//     }, 600);
