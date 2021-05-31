@@ -25,7 +25,7 @@ function randomColor() {
     }
 }
 
-//generate array of 40 random colors
+//generate array of random colors
 let colors = [];
 for (i = 0; i < 40; i++) {
     colors.push(randomColor())
